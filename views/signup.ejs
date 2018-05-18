@@ -1,0 +1,27 @@
+<%include header%>
+
+<img src="" alt="这里是图片"><br>
+<form action="login.ejs" method="get">
+	<label>用户名：</label>
+	<input type="text" name="email" value=""><br>
+	<!-- 用户名：<input type="text" name="email" value="常用邮箱或手机号"><br> -->
+	<!-- 在输入时里面的字自动消失 -->
+	<label>密码：</label>
+	<input type="password" name="password"><br>
+	<!-- 密码：<input type="password" name="password" value="密码"><br> -->
+	<input type="submit" value="登录">
+</form>
+
+<!-- 用户名： -->
+<!-- <input type="text" name="email" id="user" value=""><br> -->
+<!-- 在输入时里面的字自动消失 -->
+<!-- 密&nbsp;&nbsp;&nbsp;码： -->
+<!-- <input type="password" id="pass" name="password"><br> -->
+<!-- 密码：<input type="password" name="password" value="密码"><br> -->
+<!-- <input type="submit" value="登录"> -->
+
+<hr>
+
+<p>已有账号？ 去<a href="/login">登录</a></p>
+
+<%include footer%>

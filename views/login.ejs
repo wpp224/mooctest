@@ -1,0 +1,36 @@
+<%include header%>
+
+<!-- <img src="" alt="这里是图片"><br> -->
+<form action="http://127.0.0.1:8080" method="get">
+	<fieldset >
+		<legend>登录</legend>
+		<% if(locals.islogin){ %>
+			用户：<h3> <%= test %></h3>已经登陆。<br>
+			<a class="btn" href="/logout">登出</a>
+		<% }else{ %>
+			<label>用户：</label>
+			<input type="text" name="user"><br>
+			<!-- 用户名：<input type="text" name="user" value="常用邮箱或手机号"><br> -->
+			<!-- 在输入时里面的字自动消失 -->
+			<label>密码：</label>
+			<input type="password" name="password"><br>
+			<!-- 密码：<input type="password" name="password" value="密码"><br> -->
+
+			<input type="submit" value="登录">
+		<% } %>
+	</fieldset>
+</form>
+
+<!-- 用户名： -->
+<!-- <input type="text" name="user" id="user" value=""><br> -->
+<!-- 在输入时里面的字自动消失 -->
+<!-- 密&nbsp;&nbsp;&nbsp;码： -->
+<!-- <input type="password" id="pass" name="password"><br> -->
+<!-- 密码：<input type="password" name="password" value="密码"><br> -->
+<!-- <input type="submit" value="登录"> -->
+
+<hr>
+
+<p>没有账号？ 去<a href="/signup.ejs">注册</a></p>
+
+<%include footer%>
